@@ -11,25 +11,25 @@ function Nav() {
       <div className="navElement flex gap-20 mr-10 ">
         <h1
           className=" border-b-2 border-transparent   hover:border-b-2 
-          hover:border-amber-50"
+          hover:border-amber-50 hover:text-shadow-sm hover:text-shadow-[#828281]"
         >
           HOME
         </h1>
         <h1
           className="border-b-2 border-transparent   
-          hover:border-amber-50"
+          hover:border-amber-50 hover:text-shadow-sm hover:text-shadow-[#828281]"
         >
           ABOUT
         </h1>
         <h1
           className="border-b-2 border-transparent   
-          hover:border-amber-50"
+          hover:border-amber-50 hover:text-shadow-sm hover:text-shadow-[#828281]"
         >
           PROJECTS
         </h1>
         <h1
           className="border-b-2 border-transparent   
-          hover:border-amber-50"
+          hover:border-amber-50 hover:text-shadow-sm hover:text-shadow-[#828281]"
         >
           CONTACT US
         </h1>
