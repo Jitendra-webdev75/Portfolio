@@ -20,7 +20,9 @@ function Hero() {
       >
         <VariableProximity
           label={" Hi, I'm Jitendra"}
-          className={"variable-proximity-demo cursor-grab text-shadow-md text-shadow-[#1f241ac5]"}
+          className={
+            "variable-proximity-demo cursor-grab text-shadow-md text-shadow-[#1f241ac5]"
+          }
           fromFontVariationSettings="'wght' 400, 'opsz' 9"
           toFontVariationSettings="'wght' 1000, 'opsz' 40"
           containerRef={containerRef}
@@ -53,9 +55,17 @@ function Hero() {
 
       <CtaBtn />
       <div className="iconHandler h-[15vh] w-[70vw] flex bg-transparent justify-center items-center gap-8 pt-5">
-        <BottomIcons Icon={RiGithubFill}></BottomIcons>
-        <BottomIcons Icon={RiLinkedinFill}></BottomIcons>
-        <BottomIcons Icon={RiMailLine}></BottomIcons>
+        <a href="https://github.com/Jitendra-webdev75">
+          <BottomIcons Icon={RiGithubFill}></BottomIcons>
+        </a>
+
+        <a href="https://www.linkedin.com/in/jitendra-kumar-8ba8673b5/">
+          <BottomIcons Icon={RiLinkedinFill}></BottomIcons>
+        </a>
+
+        <a href="https://mail.google.com/mail/?view=cm&to=jitendraphone7505@gmail.com">
+          <BottomIcons Icon={RiMailLine}></BottomIcons>
+        </a>
       </div>
     </div>
   );
