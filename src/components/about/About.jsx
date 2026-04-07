@@ -1,13 +1,18 @@
-import React from "react";
-
+import {
+  RiBrushAiLine,
+  RiCodeSSlashLine,
+  RiRocket2Line,
+} from "@remixicon/react";
 function About() {
   return (
-    <div className="aboutPage h-full w-full flex flex-col items-center p-2 gap-3 bg-transparent">
-      <h1 className="text-3xl font-semibold  ">About Me</h1>
+    <div className="aboutPage h-full w-full flex flex-col items-center p-1.5 gap-3 bg-transparent">
+      <h1 className="text-3xl text-zinc-900 font-bold border-amber-50 border-b-2 roboto  ">
+        About Me
+      </h1>
       <div className="content h-full w-full flex justify-center items-center ">
         <div
-          className="leftContent h-full w-1/2  flex flex-col items-center
-          p-10 text-xl leading-9 gap-7"
+          className="leftContent h-full w-[60vw]  flex flex-col items-center
+          p-16 text-xl leading-loose gap-7  "
         >
           <p>
             I'm a passionate web developer in progress and a BCA student. I
@@ -24,7 +29,38 @@ function About() {
             experiences that make a difference.
           </p>
         </div>
-        <div className="rightContent h-full w-1/2 bg-red-400">Right</div>
+        <div
+          className="rightContent h-full w-[40vw] p-10 flex flex-col gap-5 items-end
+           "
+        >
+          <div className="card1 h-[20vh] w-[30vw] bg-white/10 border border-white/30 rounded-l-2xl hover:shadow-2xl backdrop-blur-2xl hover:shadow-gray-700">
+            <h1 className="text-2xl p-4 flex gap-10">
+              <RiCodeSSlashLine color="#106bc6" size={35} />
+              Clean Code
+            </h1>
+            <p className="text-xl p-3">
+              Writing maintainable, scalable, and efficient code is my priority.
+            </p>
+          </div>
+          <div className="card1 h-[20vh] w-[35vw] bg-white/10 border border-white/30 rounded-l-2xl backdrop-blur-2xl hover:shadow-2xl hover:shadow-gray-700">
+            <h1 className="text-2xl p-4 flex gap-10">
+              <RiBrushAiLine color="#3E1E68" size={35} />
+              Design Focus
+            </h1>
+            <p className="text-xl p-3">
+              Creating beautiful interfaces with great user experience.
+            </p>
+          </div>
+          <div className="card1 h-[20vh] w-[40vw]  border border-white/30  rounded-2xl  hover:shadow-2xl ">
+            <h1 className="text-2xl p-4 flex gap-10 ">
+              <RiRocket2Line color="#3E1E68" size={35} />
+              Fast Learner
+            </h1>
+            <p className="text-xl  p-3">
+              Fast Learner Always exploring new technologies and best practices.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
