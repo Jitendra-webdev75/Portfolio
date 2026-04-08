@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 function Nav() {
   return (
-    <div className="navbar h-[10vh] w-[100vw]  bg-transparent flex items-center justify-between text-2xl text-zinc-800 p-10 ">
+    <div className="navbar h-[10vh] w-[100vw]  bg-transparent flex items-center justify-between text-2xl text-zinc-800 p-10 z-20">
       <div
         className="logo h-[10vh] w-[7vw] bg-transparent flex items-center  rounded-full
         "
@@ -12,30 +12,30 @@ function Nav() {
       <div className="navElement flex gap-20 mr-10 ">
         <Link
           to="/"
-          className=" border-b-2 border-transparent   hover:border-b-2 
-          hover:border-amber-50 hover:text-shadow-sm hover:text-shadow-[#828281]"
+          className=" border-b-2 border-transparent   text-amber-50 hover:border-b-2 
+          hover:border-amber-50"
         >
           HOME
         </Link>
 
         <Link
           to="/about"
-          className=" border-b-2 border-transparent   hover:border-b-2 
-          hover:border-amber-50 hover:text-shadow-sm hover:text-shadow-[#828281]"
+          className=" border-b-2 border-transparent text-amber-50  hover:border-b-2 
+          hover:border-amber-50 "
         >
           About
         </Link>
         <Link
           to="/projects"
-          className=" border-b-2 border-transparent   hover:border-b-2 
-          hover:border-amber-50 hover:text-shadow-sm hover:text-shadow-[#828281]"
+          className=" border-b-2 border-transparent  text-amber-50 hover:border-b-2 
+          hover:border-amber-50 "
         >
           Projects
         </Link>
         <Link
           to="/contact-us"
-          className=" border-b-2 border-transparent   hover:border-b-2 
-          hover:border-amber-50 hover:text-shadow-sm hover:text-shadow-[#828281]"
+          className=" border-b-2 border-transparent  text-amber-50 hover:border-b-2 
+          hover:border-amber-50 "
         >
           Contact Us
         </Link>
