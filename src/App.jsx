@@ -8,7 +8,7 @@ import Nav from "./components/Nav";
 function App() {
   return (
     <>
-      <div className="main h-[100vh] w-[100vw]  bg-[#060010] backdrop-blur-sm flex flex-col items-center  gap-7">
+      <div className="main min-h-screen w-full  bg-[#060010] backdrop-blur-sm flex flex-col items-center  gap-7 overflow-hidden">
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
