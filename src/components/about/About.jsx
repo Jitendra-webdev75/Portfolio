@@ -33,7 +33,7 @@ function About() {
           className="rightContent h-full w-[40vw] p-10 flex flex-col gap-5 items-end
            "
         >
-          <div className="card1 h-[20vh] w-[30vw] bg-[#f1e9e9ea]  rounded-l-2xl hover:shadow-2xl backdrop-blur-2xl hover:shadow-gray-700">
+          <div className="card1 h-[20vh] w-[30vw] bg-[#f1e9e9ea]  rounded-l-2xl hover:shadow-2xl ">
             <h1 className="text-2xl font-semibold p-4 flex gap-10">
               <RiCodeSSlashLine color="#106bc6" size={35} />
               Clean Code
@@ -61,7 +61,9 @@ function About() {
             </p>
           </div>
         </div>
+      
       </div>
+      
     </div>
   );
 }
