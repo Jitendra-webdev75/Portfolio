@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 function Nav() {
   return (
-    <div className="navbar h-[10vh] w-[100vw]  bg-transparent flex items-center justify-between text-2xl text-zinc-800 p-10 z-20">
+    <div className="navbar h-[10vh] w-[100vw]   flex items-center justify-between text-2xl text-zinc-800 p-10 z-20">
       <div
-        className="logo h-[10vh] w-[7vw] bg-transparent flex items-center  rounded-full
+        className="logo h-[10vh] w-[7vw] bg-transparent  flex items-center  rounded-full
         "
       >
         <img src="./public/logo.png" alt="" className="h-[12vh] w-[13vw]" />

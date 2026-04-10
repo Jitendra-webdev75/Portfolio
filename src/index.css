@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+.skillRotator img {
+  filter: drop-shadow(0 0 8px rgba(34, 211, 238, 0.7));
+  scale: 1;
+}
+.skillRotator:hover img:hover {
+  scale: 1.3;
+}
+
+
+.skillRotator svg path {
+  stroke: #22d3ee;
+  stroke-opacity: 0.5;
+}
