@@ -4,6 +4,7 @@ import {
   RiRocket2Line,
 } from "@remixicon/react";
 import OrbitImages from "../OrbitImages";
+import DotGrid from "../DotGrid.jsx";
 
 function About() {
   const images = [
@@ -16,7 +17,20 @@ function About() {
     "/probl.png",
   ];
   return (
-    <div className="aboutPage min-h-screen w-full flex flex-col items-center p-1.5 gap-3 overflow-x-hidden   ">
+    <div className="aboutPage absolute min-h-screen min-w-screen flex flex-col items-center p-1.5 gap-3 overflow-x-hidden   ">
+      <div className="gridBg h-full w-full absolute overflow-hidden bg-transparent z-[-10]">
+        <DotGrid
+          dotSize={5}
+          gap={15}
+          baseColor="#271E37"
+          activeColor="#5227FF"
+          proximity={120}
+          shockRadius={250}
+          shockStrength={7}
+          resistance={550}
+          returnDuration={1.5}
+        />
+      </div>
       <h1
         className="text-3xl text-amber-50 font-bold border-amber-50 border-b-2 
         "
@@ -57,8 +71,10 @@ function About() {
             </p>
           </div>
           <div className="card2 h-[20vh] w-[35vw] bg-transparent backdrop-blur-lg shadow-sm shadow-cyan-300  rounded-l-2xl border-2 border-gray-900 hover:border-amber-50">
-            <h1 className="text-2xl text-[#9051e3] p-4 font-semibold flex gap-10
-              text-shadow-black text-shadow-sm">
+            <h1
+              className="text-2xl text-[#9051e3] p-4 font-semibold flex gap-10
+              text-shadow-black text-shadow-sm"
+            >
               <RiBrushAiLine color="#9051e3" size={35} />
               Design Focus
             </h1>
@@ -67,8 +83,10 @@ function About() {
             </p>
           </div>
           <div className="card3 h-[20vh] w-[38vw]  bg-transparent backdrop-blur-lg shadow-sm shadow-cyan-300  rounded-l-2xl border-2 border-gray-900 hover:border-amber-50">
-            <h1 className="text-2xl text-[#9051e3] text-shadow-black text-shadow-sm 
-            p-4 font-semibold flex gap-10 ">
+            <h1
+              className="text-2xl text-[#9051e3] text-shadow-black text-shadow-sm 
+            p-4 font-semibold flex gap-10 "
+            >
               <RiRocket2Line color="#9051e3" size={35} />
               Fast Learner
             </h1>
@@ -78,12 +96,25 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="skills h-[100vh] w-full flex  justify-center border-t-4 border-cyan-500    ">
-        <div className="skillSect p-8">
-          <h1 className=" text-amber-50 text-center text-5xl animate-pulse  ">
+      <div className="skills h-[100vh] w-full flex justify-center   border-t-4 border-cyan-500    ">
+        <div className="gridBg h-full w-full absolute overflow-hidden bg-transparent ">
+          <DotGrid
+            dotSize={5}
+            gap={15}
+            baseColor="#271E37"
+            activeColor="#5227FF"
+            proximity={120}
+            shockRadius={250}
+            shockStrength={7}
+            resistance={550}
+            returnDuration={1.5}
+          />
+        </div>
+        <div className="skillSect p-8 flex ">
+          <h1 className="  h-[10vh] text-amber-50 text-center text-7xl font-bold mt-23  border-b-2 border-transparent  hover:border-amber-50 z-20  ">
             My Skills
           </h1>
-          <div className="skillRotator h-[60vh] w-[70vw] flex  justify-center item        overflow-hidden mt-28 bg-[url(./dp2.png)] bg-[length:15%] bg-no-repeat bg-center scale-125  ">
+          <div className="skillRotator  h-[60vh] w-[70vw]  flex  justify-center item        overflow-hidden mt-28 bg-[url(./dp2.png)] bg-[length:15%] bg-no-repeat bg-center scale-125  ">
             <OrbitImages
               images={images}
               shape="ellipse"
