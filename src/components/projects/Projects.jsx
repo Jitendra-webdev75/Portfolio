@@ -1,6 +1,6 @@
 import React from "react";
 import TypingEffect from "../TypingEffect";
-import Showcase from "./Showcase";
+import Showcase from "../Showcase";
 
 function Projects() {
   return (
@@ -12,9 +12,10 @@ function Projects() {
           text3={"Scroll to Begin."}
         />
       </h1>
-      <Showcase/>
+      <div className="project1 h-screen w-full ">
+        <Showcase/>
+      </div>
     </div>
-
   );
 }
 

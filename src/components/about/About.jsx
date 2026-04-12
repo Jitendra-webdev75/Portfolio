@@ -17,7 +17,7 @@ function About() {
     "/probl.png",
   ];
   return (
-    <div className="aboutPage absolute min-h-screen min-w-screen flex flex-col items-center p-1.5 gap-3 overflow-x-hidden   ">
+    <div className="aboutPage absolute min-h-screen min-w-screen flex flex-col items-center p-15 gap-3 overflow-x-hidden   ">
       <div className="gridBg h-full w-full absolute overflow-hidden bg-transparent z-[-10]">
         <DotGrid
           dotSize={5}
@@ -131,7 +131,6 @@ function About() {
               paused={false}
             />
           </div>
-          ;
         </div>
       </div>
     </div>
