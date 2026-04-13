@@ -60,7 +60,7 @@ function Hero() {
         falloff="linear"
       />
 
-      <CtaBtn />
+      <CtaBtn btn1={"Get in Touch"} btn2={"View My Work"} />
       <div className="iconHandler h-[15vh] w-[70vw] flex bg-transparent justify-center items-center gap-8 pt-5 z-10 mt-20">
         <a href="https://github.com/Jitendra-webdev75">
           <BottomIcons Icon={RiGithubFill}></BottomIcons>
