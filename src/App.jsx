@@ -5,10 +5,12 @@ import Projects from "./components/projects/Projects";
 import Contact from "./components/Contactus/Contact";
 import Nav from "./components/Nav";
 import "./index.css";
+import CursorCircle from "./components/CursorCircle";
 function App() {
   return (
     <>
       <div className="main min-h-screen w-full   backdrop-blur-sm flex flex-col items-center  gap-7 overflow-hidden bg-[url(/bg.jpg)] bg-fixed  ">
+        <CursorCircle/>
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
