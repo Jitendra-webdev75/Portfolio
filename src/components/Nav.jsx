@@ -1,15 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
-function Nav() {
+import { RiMenuLine } from "@remixicon/react";
+function Nav({ menu, setMenu }) {
   return (
-    <div className="navbar h-[10vh] w-[100vw]   flex items-center justify-between text-2xl text-zinc-800 p-10 z-20">
+    <div
+      className="navbar h-[10vh] w-[100vw]   flex items-center justify-between text-2xl text-zinc-800 p-10 z-20
+    "
+    >
       <div
-        className="logo h-[10vh] w-[7vw] bg-transparent  flex items-center  rounded-full
-        "
+        className="logo h-[10vh] w-[7vw] scale-x-[4] bg-transparent  flex items-center  rounded-full
+         sm:scale-x-[3] md:scale-x-[1.8] lg:scale-x-[1]"
       >
         <img src="./public/logo.png" alt="" className="h-[12vh] w-[13vw]" />
       </div>
-      <div className="navElement flex gap-20 mr-10 ">
+      <div
+        className="navElement hidden gap-20 mr-10
+      sm:hidden md:hidden lg:flex "
+      >
         <Link
           to="/"
           className=" border-b-2 border-transparent   text-amber-50 hover:border-b-2 
@@ -40,6 +47,13 @@ function Nav() {
           Contact Us
         </Link>
       </div>
+      <h1
+        onClick={() => setMenu(true)}
+        className="menuBar flex text-amber-50  scale-125
+        sm:flex  sm:text-amber-50  md:text-amber-50 md:flex lg:hidden"
+      >
+        <RiMenuLine />
+      </h1>
     </div>
   );
 }
