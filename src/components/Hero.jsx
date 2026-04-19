@@ -1,4 +1,5 @@
 import CtaBtn from "./CtaBtn";
+import { Link } from "react-router-dom";
 import { useRef } from "react";
 import VariableProximity from "./VariableProximity";
 import BottomIcons from "./BottomIcons";
@@ -9,7 +10,8 @@ function Hero() {
   return (
     <div
       className="heroSection h-[80vh] w-[90vw] bg-transparent  flex flex-col items-center 
-        justify-center gap-8  p-14  "
+        justify-center gap-8  p-14 
+        sm:text-center lg:gap-3.5 leading-loose "
     >
       <div className="absolute inset-0 z-0 opacity-60">
         <Orb
@@ -40,7 +42,7 @@ function Hero() {
       <VariableProximity
         label={" Frontend Developer"}
         className={
-          "variable-proximity-demo text-4xl font-bold text-[#f9f4f4]  cursor-grab text-shadow-sm "
+          "variable-proximity-demo text-4xl font-bold text-[#f9f4f4]  cursor-grab text-shadow-sm  sm:text-[2.6rem] md:text-[3rem] lg:text-[3.5rem]"
         }
         fromFontVariationSettings="'wght' 400, 'opsz' 9"
         toFontVariationSettings="'wght' 1000, 'opsz' 40"
@@ -51,7 +53,7 @@ function Hero() {
       <VariableProximity
         label={`A passionate web developer who loves turning ideas into interactive web experiences. Skilled in HTML, CSS, JavaScript, and currently mastering React & Tailwind CSS, I focus on building fast, clean, and user-friendly interfaces.`}
         className={
-          "variable-proximity-demo h-[11vh] w-[70vw] flex justify-center content-center items-center text-2xl font-medium text-amber-50 text-center cursor-grab z-10 leading-9"
+          "variable-proximity-demo h-[11vh] w-[70vw] flex justify-center content-center items-center text-2xl font-medium text-amber-50 text-center cursor-grab z-10 leading-9  sm:leading-relaxed sm:text-[1.5rem]  md:text-[1.7rem] lg:text-[1.8rem] lg:leading-relaxed"
         }
         fromFontVariationSettings="'wght' 400, 'opsz' 9"
         toFontVariationSettings="'wght' 1000, 'opsz' 40"
@@ -61,7 +63,11 @@ function Hero() {
       />
 
       <CtaBtn btn1={"Get in Touch"} btn2={"View My Work"} />
-      <div className="iconHandler h-[15vh] w-[70vw] flex bg-transparent justify-center items-center gap-8 pt-5 z-10 mt-20">
+
+      <div
+        className="iconHandler h-[15vh] w-[70vw] flex bg-transparent justify-center items-center gap-8 pt-5 z-10 mt-20
+       sm:mt-36 md:mt-35 lg:mt-10   "
+      >
         <a href="https://github.com/Jitendra-webdev75">
           <BottomIcons Icon={RiGithubFill}></BottomIcons>
         </a>
