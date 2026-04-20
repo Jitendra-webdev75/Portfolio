@@ -37,7 +37,7 @@ function Showcase({
           <h1 className="text-3xl font-semibold text-emerald-400">Features</h1>
           <p>{projFeature}</p>
 
-          <h1 className="font-semibold text-blue-400">Tech Stack </h1>
+          <h1 className="font-semibold text-blue-400 ">Tech Stack </h1>
           {projTech}
           <CtaBtn
             btn1={`Live Demo`}

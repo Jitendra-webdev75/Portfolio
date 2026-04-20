@@ -40,7 +40,8 @@ function Projects() {
           codeLink={"https://github.com/Jitendra-webdev75/WeatherApp"}
         />
       </div>
-      <div className="project3 h-screen w-full ">
+
+      <div className="project3 h-screen w-full mt-16">
         <Showcase
           img1={"/water.png"}
           projTitle={" Evocus Black Water"}
@@ -52,7 +53,7 @@ function Projects() {
           codeLink={"https://github.com/Jitendra-webdev75/black-water-website"}
         />
       </div>
-      <div className="project4 h-screen w-full ">
+      <div className="project4 h-screen w-full  ">
         <Showcase
           img1={"/gta.png"}
           projTitle={" GTA VI Landing Page "}

@@ -4,7 +4,7 @@ import { RiMenuLine } from "@remixicon/react";
 function Nav({ menu, setMenu }) {
   return (
     <div
-      className="navbar h-[10vh] w-[100vw]   flex items-center justify-between text-2xl text-zinc-800 p-10 z-20
+      className="navbar h-[10vh] w-[100vw]   flex items-center justify-between text-2xl text-zinc-800 p-10 z-20 select-none
     "
     >
       <div
