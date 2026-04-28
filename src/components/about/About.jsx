@@ -37,10 +37,14 @@ function About() {
       >
         About Me
       </h1>
-      <div className="content h-full w-full flex  justify-center items-center ">
+      <div
+        className="content h-full w-full flex flex-col  justify-center items-center 
+        sm:flex sm:flex-col md:flex md:flex-col lg:flex lg:flex-row"
+      >
         <div
           className="leftContent h-full w-[60vw]  flex flex-col items-center
-          p-16 text-xl text-[#fff] leading-loose gap-7  "
+          p-16 text-xl text-[#fff] leading-loose gap-7  
+          sm:text-[1.7rem] sm:w-[78vw] md:w-[79vw] lg:w-[]"
         >
           <p>
             I'm a passionate web developer in progress and a BCA student. I

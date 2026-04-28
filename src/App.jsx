@@ -11,7 +11,7 @@ function App() {
   const [menu, setMenu] = useState(false);
   return (
     <>
-      <div className="main min-h-screen w-full   backdrop-blur-sm flex flex-col items-center  gap-7 overflow-hidden bg-[url(/bg.jpg)] bg-fixed  ">
+      <div className="main h-full w-full   backdrop-blur-sm flex flex-col items-center  gap-7 overflow-hidden bg-[url(/bg.jpg)] bg-fixed  sm:min-h-screen md:min-h-screen lg:min-h-screen  ">
         <CursorCircle />
 
         {menu && (

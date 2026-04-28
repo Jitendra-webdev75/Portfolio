@@ -9,7 +9,7 @@ function Nav({ menu, setMenu }) {
     >
       <div
         className="logo h-[10vh] w-[7vw] scale-x-[4] bg-transparent  flex items-center  rounded-full
-         sm:scale-x-[3] md:scale-x-[1.8] lg:scale-x-[1]"
+         sm:scale-x-[3.2] md:scale-w-[2vw]  lg:w-[3vw] xl:w-[2.3vw] "
       >
         <img src="./public/logo.png" alt="" className="h-[12vh] w-[13vw]" />
       </div>
