@@ -5,8 +5,19 @@ import {
 } from "@remixicon/react";
 import OrbitImages from "../OrbitImages";
 import DotGrid from "../DotGrid.jsx";
+import { useEffect, useState } from "react";
 
 function About() {
+  const [mobile, setMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleSize = () => {
+      setMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleSize);
+    return () => window.removeEventListener("resize", handleSize);
+  }, []);
   const images = [
     "/html.png",
     "/css.png",
@@ -17,7 +28,7 @@ function About() {
     "/probl.png",
   ];
   return (
-    <div className="aboutPage absolute min-h-screen min-w-screen flex flex-col items-center p-15 gap-3 overflow-x-hidden   ">
+    <div className="aboutPage absolute min-h-screen w-full flex flex-col items-center  gap-3 pt-20 overflow-x-hidden  sm:pt-20 md:pt-20 lg:pt-24">
       <div className="gridBg h-full w-full absolute overflow-hidden bg-transparent z-[-10]">
         <DotGrid
           dotSize={5}
@@ -39,12 +50,12 @@ function About() {
       </h1>
       <div
         className="content h-full w-full flex flex-col  justify-center items-center 
-        sm:flex sm:flex-col md:flex md:flex-col lg:flex lg:flex-row"
+        sm:flex  sm:flex-col md:flex md:flex-col lg:flex lg:flex-row  lg:items-baseline "
       >
         <div
-          className="leftContent h-full w-[60vw]  flex flex-col items-center
-          p-16 text-xl text-[#fff] leading-loose gap-7  
-          sm:text-[1.7rem] sm:w-[78vw] md:w-[79vw] lg:w-[]"
+          className="leftContent h-full w-full  flex flex-col items-center
+          p-10 text-xl text-[#fff] leading-loose gap-5   
+            sm:w-full sm:p-20  sm:text-[1.7rem]  md:w-full md:p-16 lg:w-[50vw] lg:p-16  "
         >
           <p>
             I'm a passionate web developer in progress and a BCA student. I
@@ -61,8 +72,8 @@ function About() {
             experiences that make a difference.
           </p>
         </div>
-        <div className="rightContent h-full w-[40vw] p-10 flex flex-col gap-5 items-end ">
-          <div className="card1 h-[20vh] w-[30vw] bg-transparent backdrop-blur-lg shadow-sm shadow-cyan-300  rounded-l-2xl border-2 border-gray-900 hover:border-amber-50  ">
+        <div className="rightContent h-full w-full  p-12 flex flex-col gap-5  items-center  sm:w-[50vw] sm:justify-start sm md:w-[50vw] lg:w-[50vw] ">
+          <div className="card1 h-[20vh] w-[90vw]  backdrop-blur-lg shadow-sm shadow-cyan-300  rounded-l-2xl border-2 border-gray-900 hover:border-amber-50    sm:w-[40vw] md:w-[40vw] lg:w-[40vw]">
             <h1
               className="text-2xl font-semibold p-4 flex gap-10 text-[#1680e9]
                text-shadow-black text-shadow-sm"
@@ -74,7 +85,7 @@ function About() {
               Writing maintainable, scalable, and efficient code is my priority.
             </p>
           </div>
-          <div className="card2 h-[20vh] w-[35vw] bg-transparent backdrop-blur-lg shadow-sm shadow-cyan-300  rounded-l-2xl border-2 border-gray-900 hover:border-amber-50">
+          <div className="card2 h-[20vh] w-[90vw] bg-transparent backdrop-blur-lg shadow-sm shadow-cyan-300  rounded-l-2xl border-2 border-gray-900 hover:border-amber-50 sm:w-[46vw] md:w-[46vw] lg:w-[44vw]">
             <h1
               className="text-2xl text-[#9051e3] p-4 font-semibold flex gap-10
               text-shadow-black text-shadow-sm"
@@ -86,7 +97,7 @@ function About() {
               Creating beautiful interfaces with great user experience.
             </p>
           </div>
-          <div className="card3 h-[20vh] w-[38vw]  bg-transparent backdrop-blur-lg shadow-sm shadow-cyan-300  rounded-l-2xl border-2 border-gray-900 hover:border-amber-50">
+          <div className="card3 h-[20vh] w-[90vw]  bg-transparent backdrop-blur-lg shadow-sm shadow-cyan-300  rounded-l-2xl border-2 border-gray-900 hover:border-amber-50 sm:w-[48vw]  md:w-[46vw] lg:w-[46vw]">
             <h1
               className="text-2xl text-[#9051e3] text-shadow-black text-shadow-sm 
             p-4 font-semibold flex gap-10 "
@@ -100,7 +111,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="skills h-[100vh] w-full flex justify-center   border-t-4 border-cyan-500    ">
+      <div className="skills h-[100vh] w-full flex  justify-center   border-t-4 border-cyan-500    ">
         <div className="gridBg h-full w-full absolute overflow-hidden bg-transparent ">
           <DotGrid
             dotSize={5}
@@ -114,21 +125,21 @@ function About() {
             returnDuration={1.5}
           />
         </div>
-        <div className="skillSect p-8 flex ">
+        <div className="skillSect p-8 flex flex-col sm:p-2 md:p-4 lg:pt-2">
           <h1 className="  h-[10vh] text-amber-50 text-center text-7xl font-bold mt-23  border-b-2 border-transparent  hover:border-amber-50 z-20  ">
             My Skills
           </h1>
-          <div className="skillRotator  h-[60vh] w-[70vw]  flex  justify-center item        overflow-hidden mt-28 bg-[url(./dp2.png)] bg-[length:15%] bg-no-repeat bg-center scale-125  ">
+          <div className="skillRotator  h-[60vh] w-[70vw]  flex  justify-center         overflow-hidden mt-10 bg-[url(./dp2.png)] bg-[length:35%] bg-no-repeat bg-center scale-125 sm:bg-[length:38%] md:bg-[length:20%] lg:bg-[length:20%]  ">
             <OrbitImages
               images={images}
-              shape="ellipse"
-              radiusX={560}
-              radiusY={200}
+              shape={mobile ? "circle" : "ellipse"}
+              radiusX={mobile ? 150 : 660}
+              radiusY={mobile ? 350 : 170}
               rotation={-8}
               duration={30}
-              itemSize={80}
+              itemSize={mobile ? 200 : 100}
               responsive={true}
-              radius={160}
+              radius={mobile ? 560 : 120}
               direction="normal"
               fill
               showPath

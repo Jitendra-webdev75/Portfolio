@@ -56,7 +56,7 @@ function Hero() {
       <VariableProximity
         label={`A passionate web developer who loves turning ideas into interactive web experiences. Skilled in HTML, CSS, JavaScript, and currently mastering React & Tailwind CSS, I focus on building fast, clean, and user-friendly interfaces.`}
         className={
-          "variable-proximity-demo h-[8vh] w-[90vw] flex justify-center   items-center   -translate-y-6 text-[0.93rem] text-amber-50 mt-24 p-1.5  cursor-grab z-10 leading-relaxed  sm:leading-relaxed sm:text-[1.3rem]  sm:text-center  md:text-[1.7rem]  lg:text-[1.8rem] lg:leading-relaxed select-none"
+          "variable-proximity-demo h-[8vh] w-[90vw] flex justify-center   items-center   -translate-y-6 text-[0.93rem] text-amber-50 mt-24 p-1  cursor-grab z-10 leading-relaxed  sm:leading-relaxed sm:text-[1.3rem]  sm:text-center  md:text-[1.7rem]  lg:text-[1.8rem] lg:leading-relaxed lg:p-10 select-none"
         }
         fromFontVariationSettings="'wght' 400, 'opsz' 9"
         toFontVariationSettings="'wght' 1000, 'opsz' 40"
