@@ -3,7 +3,7 @@ import {
   RiCodeSSlashLine,
   RiRocket2Line,
 } from "@remixicon/react";
-import OrbitImages from "../OrbitImages";
+import OrbitImages from "../OrbitImages.jsx";
 import DotGrid from "../DotGrid.jsx";
 import { useEffect, useState } from "react";
 

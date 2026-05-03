@@ -11,40 +11,53 @@ function Showcase({
 }) {
   return (
     <>
-      <div className=" h-screen flex  ">
-        <div className="relative w-full max-w-xl mx-auto ">
+      <div
+        className=" h-screen flex flex-col p-16 gap-2
+          lg:flex lg:flex-row lg:gap-20 "
+      >
+        <div className="relative w-full max-w-xl mx-auto  ">
           <img
-            src="./mac.png"
+            src={img1}
             alt="macbook"
-            className="w-full scale-150 mt-36  "
+            className="w-full scale-120 mt-36
+           lg:scale-125  "
           />
-
-          <div className="absolute top-[19%] left-[2%] w-[96%] h-[44%] overflow-hidden rounded-xl">
-            <img
-              src={img1}
-              alt="project"
-              className="w-full h-full object-top "
-            />
-          </div>
         </div>
 
         <div
-          className="aboutProjec text-2xl  text-amber-50 
-        h-full w-1/2 flex flex-col items-left p-10 gap-8"
+          className="aboutProjec   text-amber-50 
+          h-full w-[90vw] flex flex-col items-center text-center p-5 gap-5
+             lg:w-[50vw] lg:flex lg:flex-col lg:-mr-10  "
         >
-          <h1 className="text-6xl font-bold">{projTitle}</h1>
-          <p className="text-2xl">{projOverview}</p>
-          <h1 className="text-3xl font-semibold text-emerald-400">Features</h1>
-          <p>{projFeature}</p>
+          <h1 className="text-[2rem] font-bold">{projTitle}</h1>
+          <p
+            className="w-[90vw] text-xl  pl-5 
+          lg:w-[45vw]"
+          >
+            {projOverview}
+          </p>
+          <h1 className="text-[1.8rem] font-semibold text-emerald-400">
+            Features
+          </h1>
+          <p
+            className="text-xl text-center  w-[93vw]
+          lg:w-[45vw]"
+          >
+            {projFeature}
+          </p>
 
-          <h1 className="font-semibold text-blue-400 ">Tech Stack </h1>
-          {projTech}
-          <CtaBtn
-            btn1={`Live Demo`}
-            btn2={"Source Code"}
-            demo={demoLink}
-            code={codeLink}
-          />
+          <h1 className="font-semibold text-blue-400 text-[1.5rem] ">
+            Tech Stack
+          </h1>
+          <p className="text-xl">{projTech}</p>
+          <div className="ctabtns   -translate-y-16  ">
+            <CtaBtn
+              btn1={`Live Demo`}
+              btn2={"Source Code"}
+              demo={demoLink}
+              code={codeLink}
+            />
+          </div>
         </div>
       </div>
     </>
